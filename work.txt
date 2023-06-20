@@ -1,0 +1,39 @@
+##########################################################################
+#                        Week 25 - Monday 19/06/2023                     #
+##########################################################################
+
+#### Useful Links ####
+https://robocademy.com/2020/05/17/best-4-ways-to-install-ubuntu-for-ros/
+
+## Install VMWare Workstation Player 
+   (https://www.vmware.com/in/products/workstation-player.html)
+
+## Install Ubuntu Linux 
+   (https://www.releases.ubuntu.com/focal/)
+
+## Install ROS Version 1 
+   (https://wiki.ros.org/noetic/Installation)
+
+## Install Associated Packages & Tools
+
+ * openVINS (https://github.com/rpng/open_vins)
+ * gazebo (https://gazebosim.org/home)
+ * rviz (http://wiki.ros.org/rviz)
+ * rosbag
+ * catkin
+ * rosbash
+ * roslaunch
+
+## Read Documentation & Start Tutorials 1-8
+   (https://wiki.ros.org/)
+   
+   
+##########################################################################
+#                       Week 25 - Tuesday 20/06/2023                     #
+##########################################################################
+
+#### Useful Links ####
+https://github.com/ElectricRCAircraftGuy/eRCaGuy_dotfiles/blob/master/useful_scripts/ros_readbagfile.py
+
+## Read Documentation & Start Tutorials 9-20
+   (https://wiki.ros.org/)
