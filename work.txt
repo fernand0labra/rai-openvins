@@ -37,3 +37,20 @@ https://github.com/ElectricRCAircraftGuy/eRCaGuy_dotfiles/blob/master/useful_scr
 
 ## Read Documentation & Start Tutorials 9-20
    (https://wiki.ros.org/)
+   
+   
+##########################################################################
+#                      Week 25 - Wednesday 21/06/2023                    #
+##########################################################################
+
+#### Useful Links ####
+https://robocademy.com/2020/05/02/solved-opengl-issues-with-gazebo-and-vmware/
+
+## Read Documentation & Start Gazebo Tutorials
+   (https://gazebosim.org/docs/citadel/tutorials)
+   (http://wiki.ros.org/pr2_simulator/Tutorials)
+
+ * SDF (http://sdformat.org/)
+
+## Read Documentation & Start Rviz Tutorials
+   (http://wiki.ros.org/rviz)
