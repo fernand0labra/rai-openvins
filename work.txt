@@ -54,3 +54,25 @@ https://robocademy.com/2020/05/02/solved-opengl-issues-with-gazebo-and-vmware/
 
 ## Read Documentation & Start Rviz Tutorials
    (http://wiki.ros.org/rviz)
+
+
+##########################################################################
+#                      Week 25 - Wednesday 22/06/2023                    #
+##########################################################################
+
+## Read Documentation & Start Rviz Tutorials
+   (http://wiki.ros.org/rviz)
+
+## Install Associated Packages & Tools
+ * jpl-x/x (https://github.com/jpl-x/x)
+ * jpl-x/x_vio_ros (https://github.com/jpl-x/x_vio_ros)
+ * ethz-asl/rotors_simulator (https://github.com/ethz-asl/rotors_simulator)
+
+## Read Research Papers
+ * a-multi-state-constraint-kalman-filter-for-vision-aided-inertial-navigation.pdf
+ * extended-navigation-capabilities-for-a-future-mars-science-helicopter-concept.pdf
+ * openvins-a-research-platform-for-visual-intertial-estimation.pdf
+ * simultaneous-localization-and-mapping-part-I.pdf
+ * simultaneous-localization-and-mapping-part-II.pdf
+ * thermal-inertial-odometry-for-autonomous-flight-throughout-the-night.pdf
+ * visual-inertial-navigation-a-concise-review.pdf
