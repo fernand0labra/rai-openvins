@@ -57,7 +57,7 @@ https://robocademy.com/2020/05/02/solved-opengl-issues-with-gazebo-and-vmware/
 
 
 ##########################################################################
-#                      Week 25 - Wednesday 22/06/2023                    #
+#                       Week 25 - Thursday 22/06/2023                    #
 ##########################################################################
 
 ## Read Documentation & Start Rviz Tutorials
@@ -76,3 +76,18 @@ https://robocademy.com/2020/05/02/solved-opengl-issues-with-gazebo-and-vmware/
  * simultaneous-localization-and-mapping-part-II.pdf
  * thermal-inertial-odometry-for-autonomous-flight-throughout-the-night.pdf
  * visual-inertial-navigation-a-concise-review.pdf
+
+
+##########################################################################
+#                        Week 26 - Monday 26/06/2023                     #
+##########################################################################
+
+## Status Update Meeting
+
+## Simulation of VINS with SLAM/VIO
+
+ * openVINS (https://docs.openvins.com/gs-tutorial.html)
+ * xVIO ROS (https://github.com/jpl-x/x/wiki/xVIO-ROS#run-xvio-on-the-example-dataset)
+ * Rotors Simulator (https://github.com/ethz-asl/rotors_simulator)
+
+ ## Debugging Virtual Joystick Integration
