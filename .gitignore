@@ -49,5 +49,5 @@ qtcreator-*
 
 # Catkin custom files
 CATKIN_IGNORE
-simulation/data/V1_01_easy.bag
-simulation/data/circle_high_vel_restamped.bag
+simulation/data
+packages

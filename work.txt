@@ -91,3 +91,19 @@ https://robocademy.com/2020/05/02/solved-opengl-issues-with-gazebo-and-vmware/
  * Rotors Simulator (https://github.com/ethz-asl/rotors_simulator)
 
  ## Debugging Virtual Joystick Integration
+
+
+##########################################################################
+#                       Week 26 - Tuesday 27/06/2023                     #
+##########################################################################
+
+#### Useful Links ####
+https://docs.docker.com/compose/gpu-support/
+https://github.com/fcwu/docker-ubuntu-vnc-desktop
+
+## Install Docker & Build Image ubuntu-focal-ros-noetic-gz11
+
+ * Ubuntu (ubuntu:focal)
+ * ROS (ros:noetic-ros-base-focal)
+ * Gazebo (gazebo:libgazebo11-focal)
+
