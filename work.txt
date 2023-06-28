@@ -64,11 +64,13 @@ https://robocademy.com/2020/05/02/solved-opengl-issues-with-gazebo-and-vmware/
    (http://wiki.ros.org/rviz)
 
 ## Install Associated Packages & Tools
+
  * jpl-x/x (https://github.com/jpl-x/x)
  * jpl-x/x_vio_ros (https://github.com/jpl-x/x_vio_ros)
  * ethz-asl/rotors_simulator (https://github.com/ethz-asl/rotors_simulator)
 
 ## Read Research Papers
+
  * a-multi-state-constraint-kalman-filter-for-vision-aided-inertial-navigation.pdf
  * extended-navigation-capabilities-for-a-future-mars-science-helicopter-concept.pdf
  * openvins-a-research-platform-for-visual-intertial-estimation.pdf
@@ -107,3 +109,19 @@ https://github.com/fcwu/docker-ubuntu-vnc-desktop
  * ROS (ros:noetic-ros-base-focal)
  * Gazebo (gazebo:libgazebo11-focal)
 
+
+##########################################################################
+#                      Week 26 - Wednesday 28/06/2023                    #
+##########################################################################
+
+## Install Windows Subsystem for Linux (WSL)
+
+## Build Docker Image rotors-simulator and Automate Deployment
+
+ * Code dependencies
+ * Installation from Repository
+ * Compilation
+
+## Work on rotors-simulator compilation Out-Of-Memory (OOM) problems
+
+## Solve GPU acceleration on VMWare
