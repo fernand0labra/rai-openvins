@@ -1,8 +1,5 @@
 #!/bin/bash
 
-cat ./Dockerfile.libgazebo11-focal | docker build -t ubuntu-focal-ros-noetic-gz11 -
-
-
 docker build -t rotors-simulator .
 
 

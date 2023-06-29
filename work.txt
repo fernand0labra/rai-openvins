@@ -125,3 +125,14 @@ https://github.com/fcwu/docker-ubuntu-vnc-desktop
 ## Work on rotors-simulator compilation Out-Of-Memory (OOM) problems
 
 ## Solve GPU acceleration on VMWare
+
+
+##########################################################################
+#                       Week 26 - Thursday 29/06/2023                    #
+##########################################################################
+
+## Status Update Meeting
+
+## Data Collection from rotors_simulator with MAV
+
+## Simulation in OpenVINS os_msckf with rotors_simulator Data

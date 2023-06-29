@@ -49,5 +49,7 @@ qtcreator-*
 
 # Catkin custom files
 CATKIN_IGNORE
-simulation/data
-packages
+workspace/src/simulation/data
+workspace/src/mav_comm
+workspace/src/open_vins
+workspace/src/rotors_simulator
