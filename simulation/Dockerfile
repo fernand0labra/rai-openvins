@@ -1,4 +1,4 @@
-FROM ros:noetic-ros-base-focal
+FROM osrf/ros:noetic-desktop-full
 
 # install packages
 RUN apt-get update && apt-get install -q -y --no-install-recommends \
@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -q -y --no-install-recommends \
  ros-noetic-rqt-gui \
  ros-noetic-rqt-gui-py
 
-RUN apt-get update && apt-get install -q -y --no-install-recommends \
+RUN apt-get install -q -y --no-install-recommends \
  ros-noetic-joy \
  ros-noetic-octomap-ros \
  ros-noetic-mavlink \
@@ -36,5 +36,14 @@ RUN cd ros-openvins-calibration && mkdir packages && cd packages && mkdir src
 RUN cd /ros-openvins-calibration/packages/src && git clone https://github.com/ethz-asl/rotors_simulator
 RUN cd /ros-openvins-calibration/packages/src && git clone https://github.com/ethz-asl/mav_comm
 
-COPY build /ros-openvins-calibration/packages/build
-COPY devel /ros-openvins-calibration/packages/devel
+RUN /bin/bash -c '. /opt/ros/noetic/setup.bash; \
+ cd /ros-openvins-calibration/packages/src; \
+ catkin_init_workspace; \
+ cd ..; \
+ mkdir build; \
+ cd build; \
+ cmake --parallel 8 ../src -DCMAKE_INSTALL_PREFIX=../install -DCATKIN_DEVEL_PREFIX=../devel; \
+ make --jobs 8;'
+
+# COPY build /ros-openvins-calibration/packages/build
+# COPY devel /ros-openvins-calibration/packages/devel
