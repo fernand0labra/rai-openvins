@@ -136,3 +136,17 @@ https://github.com/fcwu/docker-ubuntu-vnc-desktop
 ## Data Collection from rotors_simulator with MAV
 
 ## Simulation in OpenVINS os_msckf with rotors_simulator Data
+
+
+##########################################################################
+#                       Week 26 - Friday 30/06/2023                    #
+##########################################################################
+
+#### Useful Links ####
+https://youtu.be/xQR39qYOZMY (ROS OpenVINS Simulation - XY Axes Circle)
+https://youtu.be/rnispmB90oE (ROS OpenVINS Simulation - ZY Axes Circle)
+
+## Data Collection from rotors_simulator with MAV
+
+## Simulation in OpenVINS os_msckf with rotors_simulator Data
+

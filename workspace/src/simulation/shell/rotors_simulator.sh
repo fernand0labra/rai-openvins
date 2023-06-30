@@ -26,7 +26,7 @@ source ../../packages/devel/setup.bash # term 1
 
 source ./devel/setup.bash # term 1
 
-roslaunch rotors_gazebo mav_hovering_example_with_vi_sensor.launch mav_name:=firefly world_name:=outdoor
+roslaunch rotors_gazebo rotors_simulator.launch
 rosrun simulation rotors_simulator.py 
 rviz
 
