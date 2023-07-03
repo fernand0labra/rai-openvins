@@ -131,22 +131,40 @@ https://github.com/fcwu/docker-ubuntu-vnc-desktop
 #                       Week 26 - Thursday 29/06/2023                    #
 ##########################################################################
 
+#### Useful Links ####
+https://youtu.be/wRc_jzmwQeo (ROS Rotors Simulation - XY Axes Circle)
+https://youtu.be/aM20kpeEq74 (ROS Rotors Simulation - ZY Axes Circle)
+
 ## Status Update Meeting
 
 ## Data Collection from rotors_simulator with MAV
 
-## Simulation in OpenVINS os_msckf with rotors_simulator Data
+## Simulation in OpenVINS ov_msckf with rotors_simulator Data
 
 
 ##########################################################################
-#                       Week 26 - Friday 30/06/2023                    #
+#                       Week 26 - Friday 30/06/2023                      #
 ##########################################################################
 
 #### Useful Links ####
-https://youtu.be/xQR39qYOZMY (ROS OpenVINS Simulation - XY Axes Circle)
-https://youtu.be/rnispmB90oE (ROS OpenVINS Simulation - ZY Axes Circle)
+https://youtu.be/YLn0ZE55jB4 (ROS OpenVINS Simulation - XY Axes Circle)
+https://youtu.be/DxAljZYhdVk (ROS OpenVINS Simulation - ZY Axes Circle)
 
 ## Data Collection from rotors_simulator with MAV
 
-## Simulation in OpenVINS os_msckf with rotors_simulator Data
+## Simulation in OpenVINS ov_msckf with rotors_simulator Data
 
+
+##########################################################################
+#                       Week 27 - Monday 03/07/2023                      #
+##########################################################################
+
+#### Useful Links ####
+https://ieeexplore.ieee.org/abstract/document/8793886/ (mc-VINS)
+https://docs.openvins.com/dev-docker.html#dev-docker-install (OV GPU Support)
+
+## Calibration Setup of Simulation Camera and IMU Sensors with Kalibr
+ * https://docs.openvins.com/gs-calibration.html
+ * https://github.com/skybotix/visensor_tools/tree/master/visensor_calibration_flasher
+ * https://github.com/ethz-asl/kalibr
+ * https://github.com/ori-drs/allan_variance_ros
