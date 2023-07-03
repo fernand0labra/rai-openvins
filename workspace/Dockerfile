@@ -44,6 +44,3 @@ RUN /bin/bash -c '. /opt/ros/noetic/setup.bash; \
  cd build; \
  cmake --parallel 8 ../src -DCMAKE_INSTALL_PREFIX=../install -DCATKIN_DEVEL_PREFIX=../devel; \
  make --jobs 8;'
-
-# COPY build /ros-openvins-calibration/packages/build
-# COPY devel /ros-openvins-calibration/packages/devel

@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+import sys
 import math
 import rospy
 import numpy as np
@@ -33,29 +34,48 @@ def pose_commander():
     pub = rospy.Publisher('/firefly/command/pose', PoseStamped, queue_size=10)
     rospy.init_node('pose_commander', anonymous=True)
 
+    rospy.sleep(5)
+
     pose = PoseStamped()
-    pose.header.frame_id = "/base_link"
-    pose.header.stamp = rospy.Time.now()
+    pose.header.frame_id = "/firefly/base_link"
 
     radius = 2
-    num_points = round(50 * 2 * math.pi * radius)  # 50 points each meter
+    num_points_meter = 50
+    num_points_circle = round(num_points_meter * 2 * math.pi * radius)  # 100 points each meter
+    sleep_time = 0.01
+
+    height = 5.0 if sys.argv[1] == "zy" else  2.0
 
     # IMU Excitation
-    for i in range(3 * 40):  # 3 seconds before startup
+    # for _ in range(3 * num_points_meter):
+    pose.header.stamp = rospy.Time.now()
+    pose.pose.position.x = 5.0
+    pose.pose.position.y = 0.0
+    pose.pose.position.z = height
+
+    pub.publish(pose)
+    rospy.loginfo(pose)
+    rospy.sleep(sleep_time)
+
+    points = generate_circle_points(radius, num_points_circle)
+
+    # Circle Pattern
+    for (x, y) in points:
+        pose.header.stamp = rospy.Time.now()
+        pub.publish(circle_z_y(pose, x, y) if sys.argv[1] == "zy" else circle_x_y(pose, x, y))
+        rospy.loginfo(pose)
+        rospy.sleep(sleep_time)
+
+    # Back to initial position
+    for z in np.linspace(height, 0.0, round(height) * num_points_meter):
+        pose.header.stamp = rospy.Time.now()
         pose.pose.position.x = 5.0
         pose.pose.position.y = 0.0
-        pose.pose.position.z = 5.0  
+        pose.pose.position.z = z
 
         pub.publish(pose)
         rospy.loginfo(pose)
-        rospy.sleep(0.025)
-
-    points = generate_circle_points(radius, num_points)
-
-    for (x, y) in points:
-        pub.publish(circle_z_y(pose, x, y))
-        rospy.loginfo(pose)
-        rospy.sleep(0.025)
+        rospy.sleep(sleep_time)
 
 if __name__ == '__main__':
     try:

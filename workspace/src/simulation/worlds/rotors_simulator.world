@@ -4447,7 +4447,7 @@
         <pose>5.13309 -0.015708 1.80289 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='firefly/base_link'>
-          <pose>5.13309 -0.015708 1.80289 0 -0 0</pose>
+          <pose>5.13309 -0.015708 0 0 -0 0</pose>
           <velocity>-0 -0 -0 -0 -0 -0</velocity>
           <acceleration>0 -0 -0 0 -1e-06 0</acceleration>
           <wrench>0 -0 -1e-06 0 -0 0</wrench>

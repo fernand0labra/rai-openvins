@@ -24,11 +24,12 @@ source ../../packages/devel/setup.bash # term 1
 
 # world_name = [basic, empty, hosue, iris, outdoor, test_city]
 
-source ./devel/setup.bash # term 1
+source ./devel/setup.bash
 
 roslaunch rotors_gazebo rotors_simulator.launch
+
 rosrun simulation rotors_simulator.py 
 rviz
 
-rosbag record -O rotors_simulator /firefly/vi_sensor/left/image_raw /firefly/vi_sensor/right/image_raw /firefly/vi_sensor/imu /firefly/base_link
-rosbag play rotors_simulator
+rosbag record -O rotors_simulator /firefly/ground_truth/odometry /firefly/ground_truth/imu /cam0/image_raw /cam1/image_raw /imu0
+rosbag play rotors_simulator_circle_x_y.bag /tf:=/tf_old

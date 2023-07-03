@@ -11,10 +11,9 @@ source ./devel/setup.bash # term 1
 roslaunch ov_msckf subscribe.launch config:=euroc_mav
 
 rviz # term 2 (ov_msckf/launch/display.rviz)
-rosbag play ./src/simulation/data/rotors_simulator.bag \
- /firefly/vi_sensor/left/image_raw:=/cam0/image_raw \
- /firefly/vi_sensor/right/image_raw:=/cam1/image_raw \
- /firefly/vi_sensor/imu:=/imu0 # term 3
+rosbag play ./src/simulation/data/rotors_simulator.bag
+
+rosrun tf static_transform_publisher 0 0 0 0 0 0 1 map my_frame 10
 
 
 ##############################################
