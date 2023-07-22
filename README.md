@@ -168,6 +168,10 @@ rosbag play ./src/simulation/data/rotors_simulator.bag
 
 The results of the simulation can be seen respectively on the following two videos. On the left the simulated odometry from the RotorS MAV can be seen with the respective VIO obtained from Open VINS on the right.
 
+<iframe
+src="https://www.youtube.com/embed/aM20kpeEq74" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+</iframe>
+
 <table>
 <tr>
 <td><iframe
