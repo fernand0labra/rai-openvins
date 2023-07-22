@@ -12,7 +12,7 @@
     1. [Installation (Ubuntu Focal 20.04)](#installation-ubuntu-focal-2004)
     2. [Simulation](#simulation)
     3. [IMU & Camera Calibration](#imu-and-camera-calibration)
-    4. [On-hands Evaluation](#on-hands-evaluation)
+    4. [Hands-on Evaluation](#hands-on-evaluation)
 
 ## Introduction
 
@@ -166,7 +166,9 @@ rviz # term 2 (ov_msckf/launch/display.rviz)
 rosbag play ./src/simulation/data/rotors_simulator.bag
 ```
 
-The results of the simulation can be seen respectively on the following two images. On the left the simulated odometry from the RotorS MAV can be seen with the respective VIO obtained from Open VINS on the right. The images are linked to the respective videos.
+The results of the simulation can be seen respectively on the following two images. On the left the simulated odometry from the RotorS MAV can be seen with the respective VIO obtained from Open VINS on the right. The images are linked to the respective videos. 
+
+The VIO is not accurate due to the use of a different calibration for the IMU noise and the camera intrinsics which does not adjust to that of the simulated sensors.
 
 <table>
 <tr>
@@ -181,4 +183,39 @@ The results of the simulation can be seen respectively on the following two imag
 
 ### IMU and Camera Calibration
 
-### On-hands Evaluation
+In order to perform a real life test of the VIO, the calibration of the IMU, the camera intrinsics and the transform required between the two of them was done by one of the lab researchers.
+* The IMU noise measurement is done through the [Allan variance](https://github.com/ori-drs/allan_variance_ros) after recording sensor data in an isolated environment.
+* The camera intrinsics are obtained by recording images on the AprilGrid seen below while exciting all of the 6 Degrees of Freedom (6DOF) including [X, Y, Z] axes with [Roll, Yaw, Pitch] rotations.
+* Both IMU noise and camera intrinsics are used for calculating the transform, including the extrinsic parameters that allow the combination of the sensor data for VIO calculation.
+
+A thorough explanation of the calibration process can be followed through the OpenVINS [documentation](https://docs.openvins.com/gs-calibration.html) and the software used for both the intrinsics and extrinsics calibration is the [kalibr toolbox](https://github.com/ethz-asl/kalibr/).
+
+<table>
+<tr>
+<td><img src="docs/imgs/6dof.png"/>
+<p align="center"> 6 Degrees of Freedom (6DOF) </p></td>
+<td><img src="docs/imgs/april-grid.jpg"/>
+<p align="center"> AprilGrid for Camera Intrinsics Calibration </p></td>
+</tr>
+</table>
+
+### Hands-on Evaluation
+
+After calibrating the IMU sensor together with the camera intrinsics and extrinsics a hands-on evaluation was performed in two different ways:
+
+1. A lab researcher mounted the drone on a moving table allowing excitement on the X and Y axes with Yaw rotation. The results of moving the drone through different corridors of the building resulted in the VIO seen in the left video.
+
+2. In the robotics lab, by pysically moving the drone it was possible to record the VIO excitement of all the 6DOF. The results can be seen in the right video.
+
+Both clickable videos display the usage of the Karman filter provided by OpenVINS. This filter together with the provided software is capable of showing reliable VIO by leveraging features obtained with the images. Finally, the localization SLAM problem is solved by constructing the trajectory of the drone on real time.
+
+<table>
+<tr>
+<td><a href="https://youtu.be/ft44E5g4mEQ">
+<img src="docs/imgs/ros-openvins-vio-3dof.png"/></a>
+<p align="center"> ROS Open VINS - VIO 3DOF </p>
+</td>
+<td><a href="https://youtu.be/b4lSF-UXhN8"><img src="docs/imgs/ros-openvins-vio-6dof.png"/></a>
+<p align="center"> ROS Open VINS - VIO 6DOF </p></td>
+</tr>
+</table>
