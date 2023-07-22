@@ -13,7 +13,14 @@ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu `lsb_release -sc` main"
 wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
 sudo apt-get update
 
-sudo apt-get install ros-noetic-rviz ros-noetic-gazebo-plugins ros-noetic-octomap-msgs ros-noetic-octomap ros-noetic-rqt-gui ros-noetic-rqt-gui-py
+sudo apt-get install \
+    ros-noetic-rviz \
+    ros-noetic-gazebo-plugins  \
+    ros-noetic-octomap-msgs  \
+    ros-noetic-octomap  \
+    ros-noetic-rqt-gui  \
+    ros-noetic-rqt-gui-py
+    
 sudo apt-get install ros-noetic-joy ros-noetic-octomap-ros ros-noetic-mavlink python3-wstool python3-catkin-tools protobuf-compiler libgoogle-glog-dev ros-noetic-control-toolbox ros-noetic-mavros
 
 source /opt/ros/noetic/setup.bash

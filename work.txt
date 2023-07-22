@@ -168,3 +168,10 @@ https://docs.openvins.com/dev-docker.html#dev-docker-install (OV GPU Support)
  * https://github.com/skybotix/visensor_tools/tree/master/visensor_calibration_flasher
  * https://github.com/ethz-asl/kalibr
  * https://github.com/ori-drs/allan_variance_ros
+
+
+##########################################################################
+#                       Week 29 - Friday 21/07/2023                      #
+##########################################################################
+
+## Update README.md
