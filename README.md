@@ -31,7 +31,17 @@ The lab serves as a creative and collaborative space for exploring innovative so
 
 ### [About ROS](https://www.ros.org/)
 
-The Robot Operating System (ROS) is a set of software libraries and tools that help you build robot applications. From drivers to state-of-the-art algorithms, and with powerful developer tools, ROS has what you need for your next robotics project. And it's all open source. The version used was ROS Noetic Ninjemys, the latest ROS 1 LTS Release targeted at the Ubuntu 20.04 (Focal) release.
+The Robot Operating System (ROS) is a set of open source software libraries and tools that help you build robot applications. The version used was ROS Noetic Ninjemys, the latest ROS 1 LTS Release targeted at the Ubuntu 20.04 (Focal) release. Some of its key features include:
+
+* Middleware Communication through a set of nodes (independent software modules) that publish and subscribe to data, making it easy to exchange information within the robot's ecosystem.
+
+* Package Management: ROS uses a package-based architecture, where functionalities are organized into individual packages.
+
+* Hardware Abstraction: ROS provides hardware abstraction, allowing developers to interface with various sensors, actuators, and robots in a standardized way.
+
+* Visualization and Debugging: ROS includes visualization tools that help developers monitor and debug the robot's behavior, visualize sensor data, and understand the system's state during runtime.
+
+* Language Support: ROS supports multiple programming languages, with Python and C++ being the most commonly used.
 
 ### [About OpenVINS](https://github.com/rpng/open_vins)
 
