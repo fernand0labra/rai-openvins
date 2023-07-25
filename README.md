@@ -184,10 +184,8 @@ The VIO is not accurate due to the use of a different calibration for the IMU no
 <tr>
 <td><a href="https://youtu.be/aM20kpeEq74">
 <img src="docs/imgs/ros-rotors-simulation.png"/></a>
-<p align="center"> ROS Rotors Simulation - ZY Axes Circle </p>
 </td>
-<td><a href="https://youtu.be/DxAljZYhdVk"><img src="docs/imgs/ros-openvins-simulation.png"/></a>
-<p align="center"> ROS Open VINS Simulation - ZY Axes Circle </p></td>
+<td><a href="https://youtu.be/DxAljZYhdVk"><img src="docs/imgs/ros-openvins-simulation.png"/></a></td>
 </tr>
 </table>
 
@@ -223,9 +221,7 @@ Both clickable videos display the usage of the Karman filter provided by OpenVIN
 <tr>
 <td><a href="https://youtu.be/ft44E5g4mEQ">
 <img src="docs/imgs/ros-openvins-vio-3dof.png"/></a>
-<p align="center"> ROS Open VINS - VIO 3DOF </p>
 </td>
 <td><a href="https://youtu.be/b4lSF-UXhN8"><img src="docs/imgs/ros-openvins-vio-6dof.png"/></a>
-<p align="center"> ROS Open VINS - VIO 6DOF </p></td>
 </tr>
 </table>
