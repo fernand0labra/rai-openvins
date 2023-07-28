@@ -176,7 +176,7 @@ rviz # term 2 (ov_msckf/launch/display.rviz)
 rosbag play ./src/simulation/data/rotors_simulator.bag
 ```
 
-The results of the simulation can be seen respectively on the following two images. On the left the simulated odometry from the RotorS MAV can be seen with the respective VIO obtained from Open VINS on the right. The images are linked to the respective videos. 
+The results of the simulation can be seen respectively on the following two clickable videos. On the left the simulated odometry from the RotorS MAV can be seen with the respective VIO obtained from Open VINS on the right.
 
 The VIO is not accurate due to the use of a different calibration for the IMU noise and the camera intrinsics which does not adjust to that of the simulated sensors.
 
@@ -184,8 +184,11 @@ The VIO is not accurate due to the use of a different calibration for the IMU no
 <tr>
 <td><a href="https://youtu.be/aM20kpeEq74">
 <img src="docs/imgs/ros-rotors-simulation.png"/></a>
+<p align='Center'>ROS Rotors Simulation - ZY Axes Circle</p>
 </td>
-<td><a href="https://youtu.be/DxAljZYhdVk"><img src="docs/imgs/ros-openvins-simulation.png"/></a></td>
+<td><a href="https://youtu.be/DxAljZYhdVk"><img src="docs/imgs/ros-openvins-simulation.png"/></a>
+<p align='Center'>ROS Open VINS Simulation - ZY Axes Circle</p>
+</td>
 </tr>
 </table>
 
@@ -215,13 +218,16 @@ After calibrating the IMU sensor together with the camera intrinsics and extrins
 
 2. In the robotics lab, by pysically moving the drone it was possible to record the VIO excitement of all the 6DOF. The results can be seen in the right video.
 
-Both clickable videos display the usage of the Karman filter provided by OpenVINS. This filter together with the provided software is capable of showing reliable VIO by leveraging features obtained with the images. Finally, the localization SLAM problem is solved by constructing the trajectory of the drone on real time.
+Both clickable videos display the usage of the Karman filter provided by OpenVINS. This filter together with the provided software is capable of showing reliable VIO by leveraging features obtained from the images. Finally, the localization SLAM problem is solved by constructing the trajectory of the drone on real time.
 
 <table>
 <tr>
 <td><a href="https://youtu.be/ft44E5g4mEQ">
 <img src="docs/imgs/ros-openvins-vio-3dof.png"/></a>
+<p align='Center'>ROS Open VINS - VIO 3DOF</p>
 </td>
 <td><a href="https://youtu.be/b4lSF-UXhN8"><img src="docs/imgs/ros-openvins-vio-6dof.png"/></a>
+<p align='Center'>ROS Open VINS - VIO 6DOF</p>
+</td>
 </tr>
 </table>
