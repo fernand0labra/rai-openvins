@@ -218,7 +218,7 @@ After calibrating the IMU sensor together with the camera intrinsics and extrins
 
 2. In the robotics lab, by pysically moving the drone it was possible to record the VIO excitement of all the 6DOF. The results can be seen in the right video.
 
-Both clickable videos display the usage of the Karman filter provided by OpenVINS. This filter together with the provided software is capable of showing reliable VIO by leveraging features obtained from the images. Finally, the localization SLAM problem is solved by constructing the trajectory of the drone on real time.
+Both clickable videos display the usage of the Kalman filter provided by OpenVINS. This filter together with the provided software is capable of showing reliable VIO by leveraging features obtained from the images. Finally, the localization SLAM problem is solved by constructing the trajectory of the drone on real time.
 
 <table>
 <tr>
